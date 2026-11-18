@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: distributed-job-scheduler
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/job_scheduler}
+    username: ${DB_USERNAME:job_scheduler}
+    password: ${DB_PASSWORD:job_scheduler}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
